@@ -1,0 +1,189 @@
+#Container{
+    
+    background-color: gray;
+    padding: 10px;
+   /* margin: 0 auto; */
+    text-align: center;
+
+   
+}
+
+img{
+    width: 80%;
+    max-width: 120px;
+  /*  vertical-align: middle;*/
+    padding-bottom: 20px;
+
+
+}
+
+
+
+.image_container {
+    position: static;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px #000000 solid;
+}
+
+.prev {
+    text-decoration: none;
+    display: block;
+    float: left;
+    border: 0px;
+}
+
+.prev:hover {
+/*  background: url(../js/prevlabel.gif) left 50% no-repeat;*/
+}
+
+.prev_thumb {
+    visibility: hidden;
+    float: left;
+}
+
+.prev:hover .prev_thumb {visibility: visible;}
+
+.next {
+    text-decoration: none;
+    display: block;
+    float: right;
+    border: 0px;
+}
+
+.next:hover {
+    /*background: url(../js/nextlabel.gif) right 50% no-repeat;*/
+}
+
+.next_thumb {
+    visibility: hidden;
+    float: right;
+}
+
+.next:hover .next_thumb {visibility: visible;}
+
+.clear {
+    clear: both;
+}
+
+.thumb {
+    /*position: static;
+    line-height: 0px;
+    margin: 10px;
+    padding: 2px;
+    background-color: #000000;
+    border: 0px;*/
+  width: 100%;
+  height: auto;
+  max-width: 120px;
+  vertical-align: middle;
+}
+
+.ContenedorImg div{
+  background-color: red;
+    padding: 10px;
+    width: 100%;
+   /* margin: 0 auto; */
+   text-align: center;
+}
+
+.img_respo{
+    width: 80%;
+    max-width: 640px;
+  /*  vertical-align: middle;*/
+    padding-bottom: 20px;
+
+
+}
+
+.thumb:hover {
+    background-color: #666666;
+}
+
+.thumb:active {
+    background-color: #99CC99;
+}
+
+.thumb_active {
+    /*position: static;
+    line-height: 0px;
+    margin: 10px;
+    padding: 2px;
+    background-color: #99CC99;*/
+  width: 100%;
+  height: auto;
+  max-width: 120px;
+  vertical-align: middle;
+}
+
+/* Lightbox stylesheet */
+
+#lightbox{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    text-align: center;
+    line-height: 0;
+    }
+
+#lightbox a img{ border: none; }
+
+#outerImageContainer{
+    position: relative;
+    background-color: #fff;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    }
+
+#imageContainer{
+    padding: 10px;
+    }
+
+#loading{
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    height: 25%;
+    width: 100%;
+    text-align: center;
+    line-height: 0;
+    }
+    
+#hoverNav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    }
+    
+#imageContainer>#hoverNav{ left: 0;}
+
+#hoverNav a{ outline: none;}
+
+#prevLink, #nextLink{
+    width: 49%;
+    height: 100%;
+    background: transparent url(../js/blank.gif) no-repeat; /* Trick IE into showing hover */
+    display: block;
+    }
+    
+#prevLink { left: 0; float: left;}
+
+#nextLink { right: 0; float: right;}
+
+#prevLink:hover, #prevLink:visited:hover { background: url(../js/prevlabel.gif) left 15% no-repeat; }
+
+#nextLink:hover, #nextLink:visited:hover { background: url(../js/nextlabel.gif) right 15% no-repeat; }
+
+#imageDataContainer{
+    font: 10px Verdana, Helvetica, sans-serif;
+    background-color: #fff;
+    margin: 0 auto;
+    line-height: 1.4em;
+    overflow: auto;
+    width: 100% 
+    }
